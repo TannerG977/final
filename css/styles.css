@@ -51,6 +51,7 @@ table {
 
 /* Default Styles */
 
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px; /* 1em = 14px = 1rem */
@@ -237,7 +238,6 @@ nav form button {
 
 .vision {
 	display: block;
-	width: 706px;
 	background-image: url(../images/vision.jpg);
 	background-size: cover;
 	background-position-y: -95px;
@@ -395,13 +395,247 @@ footer .container {
 	padding-bottom: 1px;
 }
 
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+    /* NOTHING ELSE! */ 
+}
+
 
 
 
 /*======Desktop Styles======*/
 
-@media screen and (min-width:1200px) {
-	.container {
-		width: 1172px
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    /* ALL YOUR DESKTOP STYLES HERE */
+
+	p {
+		font-size: 16px;
 	}
+
+	h2 {
+		font-size: 54px;
+	}
+
+	h3 {
+		font-size: 36px;
+	}
+
+
+	/* navigation */
+
+	nav .container {
+		display: flex;
+	}
+
+	nav .container .searchbar {
+		width: 220px;
+		margin-top: 63px;
+	}
+
+	ul {
+		padding-left: 60px;
+	}
+	
+	li {
+		display: inline-block;
+		height: 60px;
+		width: 140px;
+		padding-top: 55px;
+
+	}
+
+	.logo {
+		background-color: #222222;
+		height: 100px;
+		width: 100px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+	/* header */
+
+	.header-welcome h1 {
+		font-size: 82px;
+	}
+
+	.header-welcome .container button {
+		margin-bottom: 12px;
+	}
+
+	/* about us */
+
+	.about-us .container .grid-guy {
+		display: grid;
+		grid-template-areas: 
+		"a b";
+		gap: 16px;
+	}
+
+	.grid1a {
+		grid-area: a;
+		width: 580px;
+	}
+
+	.about-us .container img {
+		width: 580px;
+		height: 290px;
+		margin-top: 18px;
+		margin-bottom: 20px;
+	}
+
+	/* services */
+
+	.services .container .gridguy2 {
+		display: grid;
+		grid-template-areas: 
+		"v v v z z z"
+		"v v v z z z"
+		"v v v z z z"
+		"w w o o p p"
+		"w w o o p p"
+		"w w o o p p"
+		;
+
+		column-gap: 16px;
+	}
+
+	.grid2a {
+		grid-area: v;
+		width: 578px;
+		height: 712px;
+	}
+
+	.grid2a button {
+		width: 554px;
+	}
+
+	.grid2b {
+		grid-area: z;
+		width: 578px;
+		height: 712px;
+	}
+
+	.grid2b button {
+		width: 554px;
+	}
+
+	.grid2c {
+		grid-area: w;
+		width: 382px;
+		height: 625px;
+	}
+
+	.grid2c button {
+		width: 355px;
+	}
+
+	.grid2d {
+		grid-area: o;
+		width: 382px;
+		height: 625px;
+	}
+
+	.grid2d button {
+		width: 355px;
+	}
+
+	.grid2e {
+		grid-area: p;
+		width: 382px;
+		height: 625px;
+	}
+
+	.grid2e button {
+		width: 355px;
+	}
+
+	/* Vision */
+
+	.vision {
+		display: block;
+		height: 295px;
+		background-image: url(../images/vision.jpg);
+		background-size: fill;
+		background-position-y: -360px;
+		color: white;
+	}
+
+	.vision h3 {
+		padding-top: 36px;
+		padding-bottom: 12px;
+	}
+
+	/* team */
+
+	.flex-man {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.flex-man img {
+		width: 583px;
+		height: 413px;
+		margin: 0px;
+	}
+
+	.flex-man .doe {
+		width: 561px;
+		height: 378;
+		margin: 0px;
+	}
+
+	.flex-man .rite {
+		width: 561px;
+		height: 378;
+		margin: 0px;
+	}
+
+	.flex-man .bob-img {
+		order: 3;
+	}
+
+
+	/* contact */
+
+	.contact .container .gridguy3 {
+		display: grid;
+		grid-template-areas:
+		"f f f g g g"
+		"f f f g g g"
+		"h h h h h h"
+		"h h h h h h";
+
+		gap: 12px;
+
+	}
+
+	.grid3a {
+		grid-area: f;
+		width: 585px;
+	}
+
+	.locate {
+		grid-area: g;
+	}
+
+	.grid3b {
+		grid-area: h;
+		width: 1170px;
+	}
+
+	iframe {
+		width: 575px;
+	}
+	
 }
