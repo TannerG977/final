@@ -566,7 +566,6 @@ footer .container {
 		display: block;
 		height: 295px;
 		background-image: url(../images/vision.jpg);
-		background-size: fill;
 		background-position-y: -360px;
 		color: white;
 	}
@@ -591,13 +590,13 @@ footer .container {
 
 	.flex-man .doe {
 		width: 561px;
-		height: 378;
+		height: 413px;
 		margin: 0px;
 	}
 
 	.flex-man .rite {
 		width: 561px;
-		height: 378;
+		height: 413px;
 		margin: 0px;
 	}
 
